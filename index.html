@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <div class="image">
-    <img src="./img/halie-west-25xggax4bSA-unsplash.jpg" alt="">
+  <div class="image">  
+    <div class="logo">
+      <img src="./img/odin-lined.png" alt="">
+      <p>ODIN</p>
+    </div>
+    <img id="background" src="./img/halie-west-25xggax4bSA-unsplash.jpg" alt="">
   </div>
   <div class="sidebar">
     <div class="title">
@@ -18,30 +21,44 @@
     </div>
     <div class="forms">
       <form action="" id="account">
-        <p>Let's do this!</p>
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName" id="firstName">
-
-        <label for="lastNmae">Last Name</label>
-        <input type="text" name="lastName" id="lastName">
-
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-
-        <label for="mobilephone">Phone Number</label>
-        <input type="number" name="mobilephone" id="mobilephone">
-
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-
-        <label for="cPassword">Confirm Password</label>
-        <input type="password" name="cPassword" id="cPassword">
+        <p id="h2">Let's do this!</p>
+        <div class="row">
+          <div class="column">
+            <div class="input">
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" name="firstName" id="firstName">
+            </div>
+            <div class="input">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="input">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password">
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="input">
+              <label for="lastName">LAST NAME</label>
+              <input type="text" name="lastName" id="lastName">
+            </div>
+            <div class="input">
+              <label for="mobilephone">PHONE NUMBER</label>
+              <input type="tel" name="mobilephone" id="mobilephone">
+            </div>
+            <div class="input">
+              <label for="cPassword">CONFIRM PASSWORD</label>
+              <input type="password" name="cPassword" id="cPassword">
+            </div>
+            
+          </div>
+      </div>
       </form>
     </div>
     <div class="create">
-      <button type="submit">Create Account</button>
+      <button type="submit" class="submit">Create Account</button>
       <p>Already have an account? <a href="">Log in</a></p>
-
     </div>
   </div>
 </body>

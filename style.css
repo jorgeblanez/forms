@@ -1,12 +1,134 @@
-body{
-  display: flex;
-  margin: 0;
+@font-face {
+  font-family: Norse-Bold;
+  src: url("./Norse-Bold.otf");
 }
 
-img{
-  width:600px
+html,body{
+  min-height: 100%;
+  overflow: auto;
+  display: flex;
+  margin: 0px;
+  padding:0px;
+}
+p {
+  width: clamp(45ch, 50%, 75ch);
+  font-family: Arial, Helvetica, sans-serif
+}
+
+#background{
+  width:500px;
+  min-height:99%;
+  object-fit: cover;
+  margin: 0px;
+  
 }
 .sidebar{
   display: flex;
   flex-direction: column;
+  min-height: 99%;
+}
+
+.logo{
+  width: 500px;
+  height: 150px;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:300px;
+}
+
+.logo img{
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  
+}
+.logo p{
+  width: 4ch;
+  color: #E5E7EB;
+  font-family: Norse-Bold;
+  font-size: 78px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title{
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  background-color: #E9F6F8;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.forms{
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #E5E7EB ;
+}
+.row{
+  display: flex;
+}
+
+.column{
+  flex:50%;  overflow: hidden;
+  max-width: 400px;
+  min-width: 400px;
+  
+}
+.input{
+  margin-bottom: 30px;
+}
+.title, 
+.forms, 
+.create{
+  padding-left: 30px;
+}
+
+.create{
+  background-color: #E9F6F8;
+  height: 100%;
+}
+
+input,
+label{
+  display: block;
+}
+label{
+  letter-spacing: 2px;
+}
+input{
+  box-sizing: border-box;
+  border-radius: 6px;
+  border:1px solid #E5E7EB; 
+  width: 20rem;
+  height: 30px;
+  padding: 1px;
+  margin: 0px;
+}
+
+#h2{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.create{
+  padding: 30px;
+}
+.submit{
+  box-sizing: border-box;
+  border-radius: 6px;
+  border:0;
+  height: 40px;
+  width: 160px;
+  background-color: #596D48;
+  font-size: 14px;
+  font-weight: 600;
+  color: #E5E7EB;
+}
+
+.submit:hover{
+  background-color: #3b4730;
+  transition: 0.2s;
 }
